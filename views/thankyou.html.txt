@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FEEDBACK B.E.(IT)</title>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+     <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body background="https://source.unsplash.com/1600x900/?study" >
+
+    <header class="jumbotron">
+        <a  href="#"><img src="image/logo.jpg" height="100" width="100">
+            FEEDBACK B.E.(IT)
+        </a>
+            <p>We look forward to your valuable feedback</p>
+    </header>
+    <div class="container col-4 col-sm-2 login_box ">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"> Thank You!</h5>
+              <p class="card-description"> We Thank you for your valuable Feedback</p>
+            </div>
+          </div>
+   </div>
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+ <style>
+   h1{
+     color:333333;
+     margin-top: 50px;
+     text-align: center;
+   }
+   h2{
+     color:333333;
+     font-size: 30px;
+     text-align: center;}
+   h4{margin-left: 40px;}
+   h5{margin-left: 40px;font-size: 17px;
+   } 
+   p
+   {
+    margin-left:40px
+   }
+   td
+   {
+     padding: 0 40px
+   }
+   th:first-child{text-align:left}
+ 
+  
+     
+   input
+   {
+     border: 1px solid;
+     border-color: #394f8a;
+     margin-left: 40px
+   }
+  
+   button{
+     background-color: #394f8a;
+     border-color:  #394f8a;
+     color: white ;
+     margin-left: 40px;}
+   textarea{ 
+     border:1px solid #394f8a;
+     margin-left: 40px;}
+   
+   </style>
+   <head>
+      <link rel="stylesheet" href="css/form.css" >
+    </head>
+<div class="container">  
+  <form id="contact" action="" method="post">
+   <div class="testbox">
+      <form action="/">
+        <h1>PANJAB UNIVERSITY, CHANDIGARH</h1>
+        <h2>Teacher-wise Student Feedback Form</h2>
+        <p>Note:<br />
+        <i> 1.) The form is to filled by the student having 65% attendance
+          <br />
+          2.) Please do not write your name or roll number on your form<br />
+          3.) The information provided by you will be kept confidential and will be used only for student participation in quarterly enhancement</i>
+        </p>
+        <pre>  </pre>
+          
+        <h4>Name of the teacher</h4>
+        <input class="first-name" type="text" name="name"  placeholder="First" />
+        <input type="text" name="name" required placeholder="Last" />
+        <h4>Subject</h4>
+        <input type="text" name="subject" required/>
+         <h4>Department</h4>
+        <input type="text" name="dept" required/>
+        <h4>Class</h4>
+        <input type="text" name="class" required/>
+        <h4>Semester</h4>
+        <input type="text" name="sem" required/>
+        
+        <h5>How satisfied were you with:<span>*</span></h5>
+        <table>
+          <tr>
+            <th class="first-col">&emsp;&emsp;&ensp;Curriculum, Teaching, Learning and Evaluation</th>
+            <th>&emsp;Strongly Disagree</th>
+            <th> &emsp;&emsp;Disagree</th>
+            <th> &emsp;&emsp;Agree</th>
+            <th>&emsp;&emsp;&ensp;Strongly Agree</th>
+          </tr>
+          <tr>
+            <td class="first-col">1.) The teacher completes the entire syllabus in time</td>
+           <td><input type="radio" value="none" name="point#1" /></td>
+            <td><input type="radio" value="none" name="point#1" /></td>
+            <td><input type="radio" value="none" name="point#1" /></td>
+            <td><input type="radio" value="none" name="point#1" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">2.) The teacher has adequate knowledge about the subject/course</td>
+            <td><input type="radio" value="none" name="point#2" /></td>
+            <td><input type="radio" value="none" name="point#2" /></td>
+            <td><input type="radio" value="none" name="point#2" /></td>
+            <td><input type="radio" value="none" name="point#2" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">3.) The teacher communicates clearly and is well prepared</td>
+            <td><input type="radio" value="none" name="point#3" /></td>
+            <td><input type="radio" value="none" name="point#3" /></td>
+            <td><input type="radio" value="none" name="point#3" /></td>
+            <td><input type="radio" value="none" name="point#3" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">4.) The teacher inspires me with his/her teaching</td>
+            <td><input type="radio" value="none" name="point#4" /></td>
+            <td><input type="radio" value="none" name="point#4" /></td>
+            <td><input type="radio" value="none" name="point#4" /></td>
+            <td><input type="radio" value="none" name="point#4" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">5.) The teacher is punctual in class</td>
+            <td><input type="radio" value="none" name="point#5" /></td>
+            <td><input type="radio" value="none" name="point#5" /></td>
+            <td><input type="radio" value="none" name="point#5" /></td>
+            <td><input type="radio" value="none" name="point#5" /></td>
+          </tr>
+              <tr>
+            <td class="first-col">6.) The teacher encourages participation and discussion in the class</td>
+            <td><input type="radio" value="none" name="point#6" /></td>
+            <td><input type="radio" value="none" name="point#6" /></td>
+            <td><input type="radio" value="none" name="point#6" /></td>
+            <td><input type="radio" value="none" name="point#6" /></td>
+          </tr>
+           <tr>
+            <td class="first-col">7.) The teacher uses teaching aids, hanouts, gives suitable references</td>
+            <td><input type="radio" value="none" name="point#7" /></td>
+            <td><input type="radio" value="none" name="point#7" /></td>
+            <td><input type="radio" value="none" name="point#7" /></td>
+            <td><input type="radio" value="none" name="point#7" /></td>
+          </tr>
+              <tr>
+            <td class="first-col">8.) The teacher is available and accessible in the department</td>
+            <td><input type="radio" value="none" name="point#8" /></td>
+            <td><input type="radio" value="none" name="point#8" /></td>
+            <td><input type="radio" value="none" name="point#8" /></td>
+            <td><input type="radio" value="none" name="point#8" /></td>
+          </tr>
+           <tr>
+            <td class="first-col">9.) The Internal evaluation process is fair and unbiased</td>
+            <td><input type="radio" value="none" name="point#9" /></td>
+            <td><input type="radio" value="none" name="point#9" /></td>
+            <td><input type="radio" value="none" name="point#9" /></td>
+            <td><input type="radio" value="none" name="point#9" /></td>
+          </tr>
+              <tr>
+            <td class="first-col">10.) The teacher maintains professionalism in all areas</td>
+           <td><input type="radio" value="none" name="point#10" /></td>
+            <td><input type="radio" value="none" name="point#10" /></td>
+            <td><input type="radio" value="none" name="point#10" /></td>
+            <td><input type="radio" value="none" name="point#10" /></td>
+          </tr>
+        </table>
+        <h4>Feel free to add any other comments or suggestions:</h4>
+        <textarea rows="5"></textarea>
+        <pre>    </pre>
+   
+        <div class="btn-block">
+          <button type="submit" href="/">Send Feedback</button>
+        </div>
+      </form>
+    </div>
