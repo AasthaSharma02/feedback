@@ -13,7 +13,7 @@ mongoose.connect(url,{
 
 });
 
-const formSchema = new mongoose.Schema(
+const formSchema1 = new mongoose.Schema(
   {
     data: Object,
    },
@@ -21,10 +21,58 @@ const formSchema = new mongoose.Schema(
    }     
    );
 
-  const Form = mongoose.model("Form",formSchema);
+const formSchema2 = new mongoose.Schema(
+  {
+    data: Object,
+   },
+    { collection : "feedback_form_2"
+   }     
+   );
 
-  const formData = (bodyData) => {
-    Form ({data : bodyData}).save((err) => {
+const formSchema3 = new mongoose.Schema(
+  {
+    data: Object,
+   },
+    { collection : "feedback_form_3"
+   }     
+   );
+const formSchema4 = new mongoose.Schema(
+  {
+    data: Object,
+   },
+    { collection : "feedback_form_4"
+   }     
+   );
+
+
+  const Form1 = mongoose.model("Form1",formSchema1);
+  const Form2 = mongoose.model("Form2",formSchema2);
+  const Form3 = mongoose.model("Form3",formSchema3);
+  const Form4 = mongoose.model("Form4",formSchema4);
+
+  const formData1 = (bodyData) => {
+    Form1 ({data : bodyData}).save((err) => {
+          if (err) {
+               throw err;
+              }
+            })
+           }
+const formData2 = (bodyData) => {
+    Form2 ({data : bodyData}).save((err) => {
+          if (err) {
+               throw err;
+              }
+            })
+           }
+const formData3 = (bodyData) => {
+    Form3 ({data : bodyData}).save((err) => {
+          if (err) {
+               throw err;
+              }
+            })
+           }
+const formData4 = (bodyData) => {
+    Form4 ({data : bodyData}).save((err) => {
           if (err) {
                throw err;
               }
@@ -38,14 +86,39 @@ app.use(express.static("public"));
 
   app.get("/", (req, res) => {
     res.render("index");
-  });
-app.get("/form1", (req, res) => {
+    });
+  app.get("/form1", (req, res) => {
     res.render("form1");
-  });
+    });
+  app.get("/form2", (req, res) => {
+    res.render("form2");
+    });
+  app.get("/form3", (req, res) => {
+    res.render("form3");
+    });
+  app.get("/form4", (req, res) => {
+    res.render("form4");
+    });
 
-app.post( "/", urlencodedParser, (req,res)=> {
-formData(req.body);  
+
+
+app.post( "/form1", urlencodedParser, (req,res)=> {
+formData1(req.body);  
 res.render("thankyou");
 });
 
+app.post( "/form2", urlencodedParser, (req,res)=> {
+formData2(req.body);  
+res.render("thankyou");
+});
+
+app.post( "/form3", urlencodedParser, (req,res)=> {
+formData3(req.body);  
+res.render("thankyou");
+});
+
+app.post( "/form4", urlencodedParser, (req,res)=> {
+formData4(req.body);  
+res.render("thankyou");
+});
  server.listen(3030);

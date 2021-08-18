@@ -1,12 +1,14 @@
-    <head>
+<html>  
+  <head>
       <link rel="stylesheet" href="css/form.css" >
     </head>
+<body>
 <div class="container">  
-  <form method="POST" action="/" id="contact" action="" >
+  <form method="POST" action="/form1" id="contact" action="" >
    <div class="testbox">
     <!--  <form action="/"> -->
         <h1>PANJAB UNIVERSITY, CHANDIGARH</h1>
-        <h2>Teacher-wise Student Feedback Form</h2>
+        <h2>Teacher-wise Student Feedback Form(1<sup>st</sup> Year)</h2>
         <p>Note:<br />
         <i> 1.) The form is to filled by the student having 65% attendance
           <br />
@@ -17,21 +19,43 @@
           
        
          <h4>Department</h4>
-        <input type="text" name="dept" required/>
-        <h4>Class</h4>
-        <input type="text" name="class" required/>
+         <select id="dropdown" name="department" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="CSE">CSE</option>
+              <option value="IT">IT</option>
+              <option value="ECE">ECE</option>
+              <option value="EEE">EEE</option>
+              <option value="BIOTECH">BIOTECH</option>
+            </select>
+   
         <h4>Semester</h4>
-        <input type="text" name="sem" required/>
+            <select id="dropdown" name="Semester" class="form-control" required>
+              <option disabled selected value>Select current Semester</option>
+              <option value="1">1</option>
+              <option value="2">2</option>              
+            </select>
         
        <!-- <h5>How satisfied were you with:<span>*</span></h5> -->
-        <table class="card" name="Prof. K.Rao">
-           <tr class="teacher" >
-            <div><h4>1. Name of the teacher: Prof. K.Rao<div></h4>
-             <div><h4>Subject
+        <table>
+          <tr >
+            <div><h4>1. Name of the teacher: 
+            <select id="dropdown" name="Teacher" class="form-control" required>
+              <option disabled selected value>Select Teacher</option>
+              <option value="Prof. K.R. Mehta">Prof. K.R. Mehta</option>
+              <option value="Prof. A.M. Rao">Prof. A.M. Rao</option>
+              <option value="Prof. Preeti Kaur ">Prof. Preeti Kaur </option>
+              <option value="Prof. K.N. Bedi">Prof. K.N. Bedi</option>
+              <option value="Prof. L.K. Mishra">Prof. L.K. Mishra</option>
+              <option value="Prof. Y.R. Reddy">Prof. Y.R. Reddy</option>
+            </select>
+
+            </h4>
+           <div>
+             <h4>Subject
              <input type="text" name="subject_1" required/>
-</h4>
-             </div>
-           </tr>  
+             </h4>
+            </div>
+          </tr>  
           <tr>
             <th class="first-col">&emsp;&emsp;&ensp;Curriculum, Teaching, Learning and Evaluation</th>
             <th>&emsp;Strongly Disagree</th>
@@ -485,3 +509,9 @@
         </div>
       </form>
     </div>
+
+<script>
+document.getElementById('contact').reset()
+</script>
+</body>
+</html>

@@ -30,11 +30,8 @@ input[type="radio"]
   border:1px solid #212a48; 
 }
 
-  
-  
 
-  
-   h1{
+h1{
      color:333333;
      margin-top: 50px;
      text-align: center;
@@ -43,12 +40,9 @@ input[type="radio"]
      color:333333;
      font-size: 30px;
      text-align: center;}
-   h4{
-   margin-left: 40px;
-    }
+   h4{margin-left: 40px;}
    h5{margin-left: 40px;font-size: 17px;
-   }
- 
+   } 
    p
    {
     margin-left:40px
@@ -76,13 +70,7 @@ input[type="radio"]
    textarea{ 
      border:1px solid #394f8a;
      margin-left: 40px;}
- .teacher{
-   background:#94baff ;
-   font-family: Stencil Std, fantasy;  
-   font-color : floral white;
-   } 
-table{
-border:1px solid #394f8a;
-}
+   
+
 
 
