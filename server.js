@@ -39,13 +39,13 @@ app.use(express.static("public"));
   app.get("/", (req, res) => {
     res.render("index");
   });
-app.get("/form", (req, res) => {
-    res.render("form");
+app.get("/form1", (req, res) => {
+    res.render("form1");
   });
 
 app.post( "/", urlencodedParser, (req,res)=> {
 formData(req.body);  
-res.render("form");
+res.render("thankyou");
 });
 
  server.listen(3030);
