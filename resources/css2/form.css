@@ -9,7 +9,7 @@ h2
 body
 {
 color: #252324;
-  background: #b366ff;}
+  background: #394f8a;}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -58,29 +58,18 @@ h1{
    input
    {
      border: 1px solid;
-     border-color: #b366ff;
+     border-color: #394f8a;
      margin-left: 40px
    }
   
    button{
-     background-color: #0073ef;
+     background-color: #394f8a;
      border-color:  #394f8a;
      color: white ;
      margin-left: 40px;}
    textarea{ 
      border:1px solid #394f8a;
      margin-left: 40px;}
-h4
-{
-  display: inline-block;
-}
-hr{
-  border-width:1.7px;
-  width:93%;
-  color:#394f8a; 
-}
-
-
    
 
 
